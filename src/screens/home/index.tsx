@@ -1,9 +1,8 @@
-import React from "react";
-import { View, Image } from "react-native";
+import React from 'react';
+import { View, Image } from 'react-native';
 
-import Logo from "../../../assets/Logo.png";
-import { Input, Button } from "../../components";
-import { styles } from "./styles";
+import Logo from '../../../assets/Logo.png';
+import { Input, Button } from '../../components';
 
 const HomeScreen: React.FC = () => {
   return (

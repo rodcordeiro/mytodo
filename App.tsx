@@ -1,5 +1,20 @@
-import TodoApp from "./src";
+import React, { useEffect } from 'react';
+import * as Updates from 'expo-updates';
+import TodoApp from './src';
 
 export default function App() {
+  useEffect(() => {
+    async function updateApp() {
+      if (process.env.NODE_ENV === 'development') {
+        return;
+      }
+      const { isAvailable } = await Updates.checkForUpdateAsync();
+      if (isAvailable) {
+        await Updates.fetchUpdateAsync();
+        await Updates.reloadAsync();
+      }
+    }
+    updateApp();
+  }, []);
   return <TodoApp />;
 }

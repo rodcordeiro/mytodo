@@ -1,7 +1,7 @@
-import { Fragment } from "react";
-import { StatusBar } from "expo-status-bar";
+import React, { Fragment } from 'react';
+import { StatusBar } from 'expo-status-bar';
 
-import HomeScreen from "./screens/home";
+import HomeScreen from './screens/home';
 
 const TodoApp = () => {
   return (
