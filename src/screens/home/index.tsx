@@ -4,13 +4,18 @@ import { View, Image } from 'react-native';
 import Logo from '../../../assets/Logo.png';
 import { Input, Button } from '../../components';
 
+import { styles } from './styles';
 const HomeScreen: React.FC = () => {
   return (
     <View>
-      <View>
-        <Image source={Logo} alt="Logo" />
+      <View style={styles.header}>
+        <Image source={Logo} alt="Logo" style={styles.image} />
         <View>
-          <Input />
+          <Input
+            placeholder="Teste"
+            placeholderTextColor="#6f6f6f"
+            style={styles.input}
+          />
           <Button />
         </View>
       </View>

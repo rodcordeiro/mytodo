@@ -7,7 +7,7 @@ const TodoApp = () => {
   return (
     <Fragment>
       <HomeScreen />
-      <StatusBar style="auto" />
+      <StatusBar style="dark" />
     </Fragment>
   );
 };
