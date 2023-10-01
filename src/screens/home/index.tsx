@@ -10,9 +10,9 @@ const HomeScreen: React.FC = () => {
     <View>
       <View style={styles.header}>
         <Image source={Logo} alt="Logo" style={styles.image} />
-        <View>
+        <View style={styles.form}>
           <Input
-            placeholder="Teste"
+            placeholder="Insira a tarefa"
             placeholderTextColor="#6f6f6f"
             style={styles.input}
           />

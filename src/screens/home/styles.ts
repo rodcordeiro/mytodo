@@ -12,8 +12,9 @@ export const styles = StyleSheet.create({
   image: {
     marginTop: 50,
   },
-  input: {
-    color: 'white',
-    placeholderTextColor: 'gray',
+  form: {
+    flexDirection: 'row',
+    width: width * 0.8,
   },
+  input: {},
 });
