@@ -2,7 +2,8 @@
   "expo": {
     "name": "mytodo",
     "slug": "mytodo",
-    "version": "1.0.0",
+    "version": "0.0.1",
+    "description": "A simple todo app",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "privacy": "public",
@@ -13,7 +14,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -36,6 +39,8 @@
       "eas": {
         "projectId": "96eda21d-3778-4bd1-91e3-72bbf8c31072"
       }
-    }
+    },"experiments": {
+      "tsconfigPaths": true
+    },
   }
 }

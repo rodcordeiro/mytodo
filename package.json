@@ -1,32 +1,35 @@
 {
   "name": "mytodo",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "format": "npm run lint && npm run prettier",
+    "format": "npm run lint && npm run pretty",
     "lint": "eslint --fix --ignore-path .eslintignore --fix --ext .ts,.tsx,.js,.jsx .",
-    "prettier": "prettier --ignore-path .eslintignore --write ."
+    "pretty": "prettier --ignore-path .eslintignore --write ."
   },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.2.3",
+    "@expo/vector-icons": "^13.0.0",
+    "@react-navigation/drawer": "^6.6.6",
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/native-stack": "^6.9.17",
     "expo": "~49.0.12",
-    "expo-font": "^11.6.0",
-    "expo-splash-screen": "^0.22.0",
-    "expo-updates": "^0.18.13",
-    "expo-status-bar": "~1.7.0",
+    "expo-font": "~11.4.0",
+    "expo-splash-screen": "~0.20.5",
+    "expo-status-bar": "~1.6.0",
+    "expo-updates": "~0.18.17",
     "react": "18.2.0",
-    "react-native": "0.72.5"
+    "react-native": "0.72.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@react-native-community/eslint-config": "^3.2.0",
     "@types/react": "~18.2.14",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
-    "@react-native-community/eslint-config": "^3.2.0",
-    "@types/react-native": "0.72.2",
     "@typescript-eslint/parser": "^5.48.2",
     "eslint": "^8.32.0",
     "eslint-config-standard-with-typescript": "^31.0.0",
