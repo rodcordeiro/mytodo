@@ -1,17 +1,16 @@
+import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Feather } from '@expo/vector-icons';
-import { View, Dimensions } from 'react-native';
 
 //   import { store } from '@/redux/store.redux';
 //   import { logOut, resetUser } from '@/redux/actions.redux';
 
-import HomeScreen from '@/features/home';
+import HomeScreen from '@/screens/home';
 
 const Drawer = createDrawerNavigator<RootStackParamList>();
 
 export const AuthenticatedNavigation = () => {
   //   const dispatch = store.dispatch;
-  const { height } = Dimensions.get('window');
   return (
     <Drawer.Navigator
       initialRouteName="Home"
