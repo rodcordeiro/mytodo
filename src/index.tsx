@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import { StatusBar } from 'expo-status-bar';
 
-import HomeScreen from './screens/home';
+import { Navigator } from './navigation';
 
 const TodoApp = () => {
   return (
     <Fragment>
-      <HomeScreen />
+      <Navigator />
       <StatusBar style="dark" />
     </Fragment>
   );

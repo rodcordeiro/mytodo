@@ -5,9 +5,9 @@ import { Feather } from '@expo/vector-icons';
 //   import { store } from '@/redux/store.redux';
 //   import { logOut, resetUser } from '@/redux/actions.redux';
 
-import HomeScreen from '@/screens/home';
+import Home from '@/screens/home';
 
-const Drawer = createDrawerNavigator<RootStackParamList>();
+const Drawer = createDrawerNavigator<AuthenticatedRoutesList>();
 
 export const AuthenticatedNavigation = () => {
   //   const dispatch = store.dispatch;
@@ -27,7 +27,7 @@ export const AuthenticatedNavigation = () => {
       }}>
       <Drawer.Screen
         name="Home"
-        component={HomeScreen}
+        component={Home}
         options={{
           headerTitle: '',
 

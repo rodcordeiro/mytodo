@@ -5,7 +5,7 @@ import Logo from '../../../assets/Logo.png';
 import { Input, Button } from '../../components';
 
 import { styles } from './styles';
-const HomeScreen: React.FC = () => {
+const HomeScreen: React.FC<ScreenProps<'Home', true>> = () => {
   return (
     <View>
       <View style={styles.header}>

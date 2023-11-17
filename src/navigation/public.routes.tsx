@@ -5,7 +5,7 @@ import LoginScreen from '@/screens/login';
 
 import { AuthenticatedNavigation } from './authenticated.routes';
 
-const Stack = createNativeStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator<PublicRoutesList>();
 
 export const PublicNavigation = () => {
   return (
