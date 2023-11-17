@@ -2,7 +2,7 @@
   "expo": {
     "name": "mytodo",
     "slug": "mytodo",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A simple todo app",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
