@@ -13,7 +13,6 @@ export const styles = StyleSheet.create({
     marginTop: 50,
   },
   form: {
-    flexDirection: 'row',
     width: width * 0.8,
   },
   input: {},
