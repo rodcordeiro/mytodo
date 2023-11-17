@@ -1,10 +1,13 @@
 import React from 'react';
 import { Pressable, Text } from 'react-native';
 
-export function Button() {
+type ButtonProps = {
+  onPress?: () => void;
+};
+export function Button({ onPress }: ButtonProps) {
   return (
-    <Pressable>
-      <Text>Oi</Text>
+    <Pressable onPress={onPress}>
+      <Text>BUTTON</Text>
     </Pressable>
   );
 }

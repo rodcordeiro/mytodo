@@ -1,7 +1,6 @@
 import {
   createDrawerNavigator,
-  DrawerContentScrollView,
-  DrawerItemList,
+  
 } from '@react-navigation/drawer';
 import { Feather } from '@expo/vector-icons';
 import { View, Dimensions } from 'react-native';
