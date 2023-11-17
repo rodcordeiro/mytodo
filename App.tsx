@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import * as Updates from 'expo-updates';
-// import * as SplashScreen from 'expo-splash-screen';
+import * as SplashScreen from 'expo-splash-screen';
 import TodoApp from './src';
 import { promiseWithTimeout } from '@/utils/promise.util';
 
@@ -10,16 +10,17 @@ export default function App() {
       if (process.env.NODE_ENV === 'development') {
         return;
       }
-      // SplashScreen.preventAutoHideAsync();
+      SplashScreen.preventAutoHideAsync();
       const { isAvailable } = await Updates.checkForUpdateAsync();
       if (isAvailable) {
         await Updates.fetchUpdateAsync();
         await Updates.reloadAsync();
       }
-      // SplashScreen.hideAsync();
     }
 
-    promiseWithTimeout(updateApp(), 10000);
+    promiseWithTimeout(updateApp(), 10000).finally(() =>
+      SplashScreen.hideAsync(),
+    );
   }, []);
   return <TodoApp />;
 }
