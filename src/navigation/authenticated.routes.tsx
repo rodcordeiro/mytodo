@@ -1,7 +1,4 @@
-import {
-  createDrawerNavigator,
-  
-} from '@react-navigation/drawer';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import { Feather } from '@expo/vector-icons';
 import { View, Dimensions } from 'react-native';
 
@@ -13,7 +10,7 @@ import HomeScreen from '@/features/home';
 const Drawer = createDrawerNavigator<RootStackParamList>();
 
 export const AuthenticatedNavigation = () => {
-//   const dispatch = store.dispatch;
+  //   const dispatch = store.dispatch;
   const { height } = Dimensions.get('window');
   return (
     <Drawer.Navigator
@@ -28,8 +25,7 @@ export const AuthenticatedNavigation = () => {
         drawerType: 'slide',
         swipeEnabled: true,
         swipeEdgeWidth: 50,
-      }}
-     >
+      }}>
       <Drawer.Screen
         name="Home"
         component={HomeScreen}
@@ -41,8 +37,6 @@ export const AuthenticatedNavigation = () => {
           ),
         }}
       />
-     
-     
     </Drawer.Navigator>
   );
 };

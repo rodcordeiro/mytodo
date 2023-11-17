@@ -1,6 +1,6 @@
 {
   "name": "mytodo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -32,7 +32,6 @@
     "@typescript-eslint/eslint-plugin": "^5.48.2",
 
 
-    "@types/react-native": "0.72.5",
     "@typescript-eslint/parser": "^5.48.2",
     "eslint": "^8.32.0",
     "eslint-config-standard-with-typescript": "^31.0.0",
